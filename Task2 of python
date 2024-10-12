@@ -1,3 +1,4 @@
+# Function to calculate letter grade based on the average
 def calculate_letter_grade(average):
     if average >= 90:
         return 'A', 4.0
@@ -10,6 +11,7 @@ def calculate_letter_grade(average):
     else:
         return 'F', 0.0
 
+# Function to input grades
 def input_grades():
     grades = {}
     num_subjects = int(input("Enter the number of subjects/assignments: "))
@@ -21,12 +23,13 @@ def input_grades():
 
     return grades
 
+# Function to calculate average grade
 def calculate_average(grades):
     total = sum(grades.values())
     average = total / len(grades)
     return average
 
-
+# Function to display results
 def display_results(grades, average, letter_grade, gpa):
     print("\n--- Student Grade Tracker ---")
     print("Grades entered:")
@@ -37,12 +40,22 @@ def display_results(grades, average, letter_grade, gpa):
     print(f"Letter Grade: {letter_grade}")
     print(f"GPA: {gpa:.2f}")
 
-
+# Main function to run the grade tracker
 def grade_tracker():
     print("Welcome to the Student Grade Tracker!")
+    
+    # Input grades
     grades = input_grades()
+    
+    # Calculate average
     average = calculate_average(grades)
+    
+    # Determine letter grade and GPA
     letter_grade, gpa = calculate_letter_grade(average)
+    
+    # Display results
     display_results(grades, average, letter_grade, gpa)
-if _name_ == "_main_":
+
+# Run the grade tracker
+if __name__ == "__main__":
     grade_tracker()
