@@ -8,7 +8,7 @@ Duration: Oct to Nov 2024
 
 
 Overview of the Project
-The *Student Grade Tracker* Python program you requested is a tool designed to help users manage student grades across different subjects or assignments. Here's a high-level overview of its functionality:
+The *Student Grade Tracker* Python program is designed to help users manage student grades across different subjects or assignments. Here's a high-level overview of its functionality:
 
 *Program Features:*
 1. *Input Grades:* 
@@ -23,9 +23,9 @@ The *Student Grade Tracker* Python program you requested is a tool designed to h
    - After the calculations, the program outputs the entered grades, the calculated average, the assigned letter grade, and the GPA in a clean, formatted manner.
 
 *Key Components:*
-- *Grade Input Function:* This takes user input for each subject and its corresponding grade, storing the data in a dictionary.
-- *Average Calculation:* The program computes the average by summing all grades and dividing by the number of entries.
-- *Letter Grade and GPA Calculation:* Based on standard grading scales, the program maps average scores to letter grades and their respective GPA values.
+- Grade Input Function:* This takes user input for each subject and its corresponding grade, storing the data in a dictionary.
+- Average Calculation:* The program computes the average by summing all grades and dividing by the number of entries.
+- Letter Grade and GPA Calculation:* Based on standard grading scales, the program maps average scores to letter grades and their respective GPA values.
 - *Results Display:* It prints all relevant information, including the list of grades, average score, letter grade, and GPA.
 
 *Purpose:*
